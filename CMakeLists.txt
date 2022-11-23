@@ -1,6 +1,8 @@
 cmake_minimum_required(VERSION 3.23)
-project(CompStruct C)
+project(CompStruct C ASM)
 
 set(CMAKE_C_STANDARD 90)
 
-add_executable(CompStruct main.c)
+set(GCC_COVERAGE_COMPILE_FLAGS "-no-pie")
+set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} ${GCC_COVERAGE_COMPILE_FLAGS}")
+add_executable(CompStruct main.c hello.s)
