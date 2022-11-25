@@ -1,5 +1,13 @@
 /app/extra/clion/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MAKE_PROGRAM=/app/extra/clion/bin/ninja/linux/ninja -G Ninja -S /home/ynon/CLionProjects/CompStruct -B /home/ynon/CLionProjects/CompStruct/cmake-build-debug
 -- Configuring done
-CMake Error: CMake can not determine linker language for target: CompStruct
--- Generating done
+CMake Error at CMakeLists.txt:8 (add_executable):
+  Cannot find source file:
+
+    hello.s
+
+
+CMake Error at CMakeLists.txt:8 (add_executable):
+  No SOURCES given to target: CompStruct
+
+
 CMake Generate step failed.  Build files cannot be regenerated correctly.
